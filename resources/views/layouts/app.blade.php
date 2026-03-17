@@ -28,7 +28,7 @@
             @yield('content')
         </main>
         <footer class="text-center my-3 text-muted">
-            Copyright &copy; 2021 UIB. All rights reserved.
+            Copyright &copy; 2026 PerformX. All rights reserved.
         </footer>
     </div>
     @yield('script')
