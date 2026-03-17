@@ -10,8 +10,8 @@
     <div class="row hero">
         <div class="col-8 offset-1 d-flex align-items-center">
             <div>
-                <h1 class="text-white font-weight-bold text-capitalize">PT. Asta Satria Investama</h1>
-                <h4 class="text-white">Perusahaan yang bergerak di bidang pengembangan game.</h4>
+                <h1 class="text-white font-weight-bold text-capitalize">Perfomx</h1>
+<h4 class="text-white">A Modern Employee Management System</h4>
             </div>
         </div>
     </div>
@@ -32,7 +32,8 @@
             <div class="col-lg-4 col-sm-12 mb-2">
                 <div class="card mx-3 h-100">
                     @if ($announcement->attachment !== null)
-                        <img src="{{ $announcement->attachment }}" class="card-img-top" alt="announcement">                    
+                     
+			<img src="{{ asset('storage/'.$announcement->attachment) }}" class="card-img-top" alt="announcement">
                     @endif
                     <div class="card-body">
                         <h5 class="card-title">{{ $announcement->title }}</h5>
