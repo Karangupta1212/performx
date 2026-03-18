@@ -54,7 +54,13 @@
                 />
               </td>
               <td>
-                <a href="{{ route('roles.show', ['role' => $user->role_id]) }}">{{ $user->role->name }}</a>
+                @if($user->role_id && $user->role)
+    <a href="{{ route('roles.show', $user->role->id) }}">
+        {{ $user->role->name }}
+    </a>
+@else
+    <span class="text-danger">No Role Assigned</span>
+@endif
               </td>
             </tr>
             @endforeach
