@@ -6,7 +6,13 @@
   </div>
   <ul class="list-unstyled components">
       <div class="d-flex justify-content-center align-items-center my-3">
-          <img src="{{ isset(auth()->user()->employee->employeeDetail->photo) ? asset('/storage/'. auth()->user()->employee->employeeDetail->photo ) : asset('/images/profile.png') }}" alt="profile-picture" class="rounded-circle w-50">
+          
+<img 
+  src="{{ isset(auth()->user()->employee->employeeDetail->photo) 
+        ? asset('/storage/'. auth()->user()->employee->employeeDetail->photo ) 
+        : asset('/images/profile.png') }}" 
+  alt="profile-picture" 
+  style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
       </div>
       <div class="d-flex justify-content-center align-items-center ">
           <h3>Hello, <b>{{ auth()->user()->name }}</b>!</h3>
