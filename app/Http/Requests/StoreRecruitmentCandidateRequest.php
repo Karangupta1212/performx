@@ -30,7 +30,8 @@ class StoreRecruitmentCandidateRequest extends FormRequest
             'address' => 'required',
             'message' => 'nullable',
             'photo' => 'required|max:2000|image|mimes:jpeg,jpg,png',
-            'cv' => 'required|max:2000|file|mimetypes:application/pdf',
-        ];
+//            'cv' => 'required|max:2000|file|mimetypes:application/pdf',
+	'cv' => 'nullable|file|max:2048',
+      ];
     }
 }
